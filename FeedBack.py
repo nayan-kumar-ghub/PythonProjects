@@ -27,3 +27,16 @@ elif user_input == 5:
     feedback(None, None, None, user_input)
 else:
     print("Invalid rating, please provide a rating between 0 and 5.")
+
+"""
+feedback() function logic: The function now checks each condition with fed1, fed2, fed3, and fed4 based on the user's rating.
+If the user enters 0, it prints a message asking for improvement.
+If the user enters 1, it thanks the user and asks for suggestions.
+If the user enters 2 or 3, it promises better service next time.
+If the user enters 5, it expresses appreciation.
+Any other input outside 0-5 results in an invalid rating message.
+
+User input handling:
+The program prompts the user for input using input(), converts it to an integer, and calls the feedback() function with the appropriate parameters.
+Based on the user's input, only the corresponding parameter (fed1, fed2, fed3, or fed4) is passed to the function while others are set to None. This ensures the function handles each case correctly.
+"""
